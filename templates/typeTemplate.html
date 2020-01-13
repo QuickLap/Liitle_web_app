@@ -1,0 +1,13 @@
+{% extends "typeStandard.html" %}
+
+    {% block header %}
+	<h1>Заметка:  {{title}}</h1>
+	{% endblock %}
+
+	{% block content %}
+	<ul>
+        {% for item in text %}
+            <li><h2>{{item}}</h2></li>
+        {% endfor %}
+    </ul>
+	{% endblock %}
